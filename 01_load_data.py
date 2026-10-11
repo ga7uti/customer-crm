@@ -17,3 +17,7 @@ print("Test examples:", len(test_data))
 print("\nTraining columns:", train_data.columns.tolist())
 print("\nFirst training example:")
 print(train_data.iloc[0])
+
+train_data.to_csv("train.csv", index=False)
+test_data.to_csv("test.csv", index=False)
+
